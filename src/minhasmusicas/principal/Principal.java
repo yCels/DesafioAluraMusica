@@ -2,6 +2,7 @@ package minhasmusicas.principal;
 
 import minhasmusicas.modelo.Musica;
 import minhasmusicas.modelo.Podcast;
+import minhasmusicas.modelo.Preferidas;
 
 public class Principal {
     public static void main(String[] args) {
@@ -31,6 +32,10 @@ public class Principal {
         for(int i = 0; i <=1000;i++){
             meuPodcast.curtir();
         }
+
+        Preferidas minhasPrefereidas = new Preferidas();
+        minhasPrefereidas.inclui(minhaMusica);
+        minhasPrefereidas.inclui(meuPodcast);
 
 
 
