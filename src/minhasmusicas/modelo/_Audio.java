@@ -1,0 +1,37 @@
+package minhasmusicas.modelo;
+
+public class _Audio {
+    private String titulo;
+    private int totalRepoducoes;
+    private int totalCurtidas;
+    private double classificacao;
+
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public int getTotalRepoducoes() {
+        return totalRepoducoes;
+    }
+
+    public int getTotalCurtidas() {
+        return totalCurtidas;
+    }
+
+    public double getClassificacao() {
+        return classificacao;
+    }
+
+    public void curtir(){
+        this.totalCurtidas++;
+    }
+
+    public void reproduz(){
+        this.totalRepoducoes++;
+    }
+}
