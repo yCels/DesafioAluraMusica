@@ -1,6 +1,6 @@
 package minhasmusicas.modelo;
 
-public class _Audio {
+public class Audio {
     private String titulo;
     private int totalRepoducoes;
     private int totalCurtidas;
